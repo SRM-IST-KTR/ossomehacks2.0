@@ -12,6 +12,9 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      perspective: {
+        300: '300px',
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         dmSans: ['DM Sans', 'sans-serif']
