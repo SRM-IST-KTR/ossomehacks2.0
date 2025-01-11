@@ -21,6 +21,9 @@ export default {
         event_gray: "#202020",
         bg_black: "#0B0F12"
       },
+      perspective: {
+        1000: "1000px",
+      },
     },
   },
   plugins: [],
