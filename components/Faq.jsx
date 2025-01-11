@@ -9,22 +9,36 @@ const Faq = () => {
     };
 
     return (
-        <div>
-            <div className="flex justify-center text-[30px] font-bold mb-[30px]">FREQUENTLY ASKED QUESTIONS</div>   
+        <div className="bg-[#1E002E] overscroll-none w-full mb-5 pb-5">
+            <div className="flex justify-center text-[24px] md:text-[30px] font-bold mb-8 pt-10 text-white tracking-tighter">
+                FREQUENTLY ASKED QUESTIONS
+            </div>
 
             {faqData.map((faq, index) => (
-                <div key={index} className="flex flex-col justify-center items-center mb-[10px]">
-                    <div className="flex flex-col rounded-xl focus-within::shadow-[0px_0px_5px_3px_rgba(13,255,78,1)] transition-all">
-                        <div className="questiondiv flex flex-row justify-between items-center bg-gray-600 text-white p-[20px] w-[500px] rounded-t-xl cursor-pointer"
+                <div key={index} className="flex flex-col justify-center items-center mb-4 px-4 md:px-0">
+                    <div
+                        className={`flex flex-col w-full max-w-[500px] rounded-xl transition-all ease-in duration-300 ${
+                            visibleAnswerIndex === index ? "shadow-[5px_5px_4px_0px_#AA249080] border-2 border-[#AA2490]" : ""
+                        }`}
+                    >
+                        <div
+                            className={`questiondiv flex flex-row justify-between items-center bg-[#3A333E] text-white p-4 md:p-[20px] w-full cursor-pointer transition-all ease-in duration-300 ${
+                                visibleAnswerIndex === index ? "rounded-t-xl" : "rounded-xl"
+                            }`}
                             onClick={() => handleToggleAnswer(index)}
+                            aria-expanded={visibleAnswerIndex === index}
                         >
-                            <div>{faq.question}</div>
-                            <div>
-                                <img src="../public/plus_icon.png" className="h-[10px]"/>
-                            </div>
+                            <span className="text-sm md:text-base">{faq.question}</span>
+                            <img
+                                src="plus_icon.png"
+                                alt="Toggle FAQ"
+                                className={`h-[10px] md:h-[12px] transition-transform ease-in duration-300 ${
+                                    visibleAnswerIndex === index ? "rotate-45" : ""
+                                }`}
+                            />
                         </div>
                         {visibleAnswerIndex === index && (
-                            <div className="answerdiv bg-gray-700 text-white p-[20px] w-[500px] rounded-b-xl">
+                            <div className="answerdiv bg-[#44444480] text-white p-4 md:p-[20px] w-full rounded-b-xl transition-all ease-in duration-300 text-sm md:text-base">
                                 {faq.answer}
                             </div>
                         )}
@@ -32,7 +46,7 @@ const Faq = () => {
                 </div>
             ))}
         </div>
-    ); 
+    );
 };
 
 export default Faq;
