@@ -107,6 +107,18 @@ export default function Hero() {
             <div className="flex shrink-0">
               REGISTRATION IS NOW OPEN · REGISTRATION IS NOW OPEN · REGISTRATION IS NOW OPEN ·
             </div>
+            <div className="flex shrink-0">
+              REGISTRATION IS NOW OPEN · REGISTRATION IS NOW OPEN · REGISTRATION IS NOW OPEN ·
+            </div>
+            <div className="flex shrink-0">
+              REGISTRATION IS NOW OPEN · REGISTRATION IS NOW OPEN · REGISTRATION IS NOW OPEN ·
+            </div>
+            <div className="flex shrink-0">
+              REGISTRATION IS NOW OPEN · REGISTRATION IS NOW OPEN · REGISTRATION IS NOW OPEN ·
+            </div>
+
+
+
           </div>
         </div>
 
