@@ -98,12 +98,19 @@ const Tracks = () => {
   }, [activeIndex]);
 
   return (
+    <div className="bg-[#1e002e]">
+      <div className="flex justify-center relative text-[60px] sm:text-[120px] md:text-[160px] xl:text-[280px] font-extrabold text-[#6B5E77] md:pl-20 md:pr-20  ">
+        DOMAINS
+        <div className="flex justify-center absolute text-[30px] sm:text-[60px] md:text-[90px] xl:text-[140px] bottom-0 font-extrabold text-[#FCF961]">
+          DOMAINS
+        </div>
+      </div>
     <div 
-      className="relative min-h-screen bg-[#1E002E] flex items-center justify-center overflow-hidden cursor-pointer carousel-container"
+      className="relative  bg-[#1E002E] flex items-center justify-center overflow-hidden cursor-pointer carousel-container"
       onClick={handleClick}
     >
-      <div className="relative w-full max-w-[90vw] lg:max-w-[1600px]">
-        <div className="relative flex justify-center items-center w-full h-[60vh] max-h-[600px]">
+      <div className="relative w-full max-w-[90vw] mt-[0px] lg:max-w-[1600px] lg:mt-[50px] md:mt-[50px]">
+        <div className="relative flex justify-center items-center w-full lg:h-[60vh] h-[40vh] max-h-[600px]">
           {getVisibleItems().map(({ id, src, alt, href, position }) => {
             const styles = getTransformStyles(position);
 
@@ -119,19 +126,12 @@ const Tracks = () => {
                 }}
               >
                 <div className={` 
-                  relative
-                  w-[140px] h-[140px] 
-                  sm:w-[180px] sm:h-[180px] 
-                  md:w-[220px] md:h-[220px] 
-                  lg:w-[260px] lg:h-[260px] 
-                  transition-all duration-500 
+                  relative w-[140px] h-[140px] sm:w-[180px] sm:h-[180px] md:w-[220px] md:h-[220px] lg:w-[260px] lg:h-[260px] transition-all duration-500 
                   ${position === 0 ? 'hover:shadow-[0_0_30px_#da8ee7]' : ''} 
                 `}>
                   <img
-                    src={src}
-                    alt={alt}
-                    className="w-full h-full object-cover rounded-lg shadow-lg"
-                    draggable="false"
+                    src={src} alt={alt}
+                    className="w-full h-full object-cover rounded-lg shadow-lg" draggable="false"
                     style={{
                       backfaceVisibility: 'hidden',
                     }}
@@ -142,8 +142,8 @@ const Tracks = () => {
           })}
         </div>
       </div>
+      </div>
     </div>
   );
 };
-
 export default Tracks;
