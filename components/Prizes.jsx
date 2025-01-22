@@ -2,6 +2,15 @@ import React, { useState, useRef } from "react";
 import Faq from './Faq'
 
 const Prizes = () => {
+    
+    const handleScrollToFaqs = () => {
+        const faqstart = document.querySelector("#faqheader");
+        if (faqstart) {
+            faqstart.scrollIntoView({ behavior: "smooth" });
+        } else {
+            console.error("Element #faqheader not found in the DOM.");
+        }
+    }
 
     return (
         <div className='bg-[#1E002E]'>
@@ -26,7 +35,7 @@ const Prizes = () => {
                         <div>
                             Cash Prize of <span className='font-extrabold'>INR 500</span></div>
                     </div>
-                    <div className='text-[16px] font-semibold hover:text-blue-700 transition-all'>KNOW MORE</div>
+                    <div onClick={handleScrollToFaqs} className='text-[16px] font-semibold hover:text-blue-700 transition-all'>KNOW MORE</div>
                 </div>
 
                 <div className='flex flex-col items-center justify-between h-[344px] w-[295px] bg-white cursor-pointer pb-[30px] pt-[70px] rounded-xl relative hover:translate-y-[-30px] transition-all'>
@@ -42,7 +51,7 @@ const Prizes = () => {
                         <div>
                             Cash Prize of <span className='font-extrabold'>INR 500</span></div>
                     </div>
-                    <div className='text-[16px] font-semibold hover:text-blue-700 transition-all'>KNOW MORE</div>
+                    <div onClick={handleScrollToFaqs} className='text-[16px] font-semibold hover:text-blue-700 transition-all'>KNOW MORE</div>
                 </div>
 
                 <div className='flex flex-col items-center justify-between h-[344px] w-[295px] bg-white cursor-pointer pb-[30px] pt-[70px] rounded-xl relative hover:translate-y-[-30px] transition-all'>
@@ -58,7 +67,7 @@ const Prizes = () => {
                         <div>
                             Cash Prize of <span className='font-extrabold'>INR 500</span></div>
                     </div>
-                    <div className='text-[16px] font-semibold hover:text-blue-700 transition-all'>KNOW MORE</div>
+                    <div onClick={handleScrollToFaqs} className='text-[16px] font-semibold hover:text-blue-700 transition-all'>KNOW MORE</div>
                 </div>
 
             </div>
