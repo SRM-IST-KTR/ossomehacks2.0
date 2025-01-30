@@ -189,7 +189,7 @@ export default function Hero() {
             <Image src="/hero/b1.svg" layout="intrinsic" width={250} height={50} alt="Register" />
           </button>
 
-          <button className="border-4 border-[#FCF961] text-white font-semibold w-[250px] sm:w-[250px] h-[50px] rounded-[10px] hover:bg-[#FCF961] hover:text-black text-[16px] font-Uni Sans Heavy flex items-center justify-center">
+          <button className="border-4 border-[#FCF961] text-white font-semibold w-[250px] sm:w-[250px] h-[50px] rounded-[10px] hover:bg-[#FCF961] hover:text-black text-[16px] font-Uni Sans Heavy flex items-center justify-center transition duration-300">
             <div style={{ marginRight: "8px", marginTop: "2.7px" }}>
               <Image src="/hero/discord_icon.svg" width={18} height={15} alt="Discord Icon" />
             </div>
