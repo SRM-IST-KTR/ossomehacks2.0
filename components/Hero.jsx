@@ -159,6 +159,7 @@ export default function Hero() {
 
   return (
     <div className="relative min-h-screen bg-[#1E002E] px-4 md:px-0">
+      <div id="particles-js" className="absolute inset-0 pointer-events-none" />
       <div id="particles-js" className="absolute inset-0" />
 
       <Head>
