@@ -186,26 +186,25 @@ export default function Hero() {
         </div>
 
         <div className="pt-[30px] flex justify-center ml-[-90px] mt-[-35px] px-4 md:px-0">
-          <Image src="/hero/s1.svg" width={1440} height={32} alt="Subheading" />
-        </div>
-
-        <div className="flex justify-center pt-[70px] gap-[20px] flex-wrap sm:flex-nowrap px-4 md:px-0">
-           <div className="relative" style={{ width: 250, height: 50 }}>
-          <Image 
-            src="/hero/b1.svg" 
-            layout="fill"
-            objectFit="contain" 
-            alt="Register" 
-            className="pointer-events-none"
-          />
+          <div className="relative" style={{ width: 250, height: 50 }}>
           <div 
-            className="apply-button absolute inset-0 opacity-0 cursor-pointer"
+            className="apply-button absolute inset-0 opacity-0"
             data-hackathon-slug="YOUR-HACKATHON-SLUG"
             data-button-theme="dark"
-            style={{ width: '100%', height: '100%' }}
-          />
+            style={{ zIndex: 1 }}
+          ></div>
+          
+          <div className="absolute inset-0 z-10 pointer-events-none">
+            <Image
+              src="/hero/b1.svg"
+              layout="fill"
+              objectFit="contain"
+              alt="Register"
+              className="hover:opacity-75 transition-opacity"
+            />
+          </div>
         </div>
-
+            
 
           <button className="border-4 border-[#FCF961] text-white font-semibold w-[250px] sm:w-[250px] h-[50px] rounded-[10px] hover:bg-[#FCF961] hover:text-black text-[16px] font-Uni Sans Heavy flex items-center justify-center transition duration-300">
             <div style={{ marginRight: "8px", marginTop: "2.7px" }}>
