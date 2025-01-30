@@ -128,7 +128,11 @@ export default function Hero() {
   "retina_detect": true
       });
     };
-
+    const devfolioScript = document.createElement('script');
+    devfolioScript.src = 'https://apply.devfolio.co/v2/sdk.js';
+    devfolioScript.async = true;
+    devfolioScript.defer = true;
+    document.body.appendChild(devfolioScript);
     const targetDate = new Date();
     targetDate.setDate(targetDate.getDate() + 25);
 
@@ -186,9 +190,22 @@ export default function Hero() {
         </div>
 
         <div className="flex justify-center pt-[70px] gap-[20px] flex-wrap sm:flex-nowrap px-4 md:px-0">
-          <button className="text-white font-semibold w-[250px] sm:w-[250px] h-[50px] rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition duration-200">
-            <Image src="/hero/b1.svg" layout="intrinsic" width={250} height={50} alt="Register" />
-          </button>
+           <div className="relative" style={{ width: 250, height: 50 }}>
+          <Image 
+            src="/hero/b1.svg" 
+            layout="fill"
+            objectFit="contain" 
+            alt="Register" 
+            className="pointer-events-none"
+          />
+          <div 
+            className="apply-button absolute inset-0 opacity-0 cursor-pointer"
+            data-hackathon-slug="YOUR-HACKATHON-SLUG"
+            data-button-theme="dark"
+            style={{ width: '100%', height: '100%' }}
+          />
+        </div>
+
 
           <button className="border-4 border-[#FCF961] text-white font-semibold w-[250px] sm:w-[250px] h-[50px] rounded-[10px] hover:bg-[#FCF961] hover:text-black text-[16px] font-Uni Sans Heavy flex items-center justify-center transition duration-300">
             <div style={{ marginRight: "8px", marginTop: "2.7px" }}>
