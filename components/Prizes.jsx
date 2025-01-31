@@ -15,9 +15,9 @@ const Prizes = () => {
     return (
         <div className='bg-[#1E002E]'>
 
-            <div className='flex justify-center relative text-[60px] sm:text-[120px] md:text-[180px] xl:text-[280px] tracking-tight font-extrabold text-[#6B5E77] mb-[80px]'>
+            <div className='flex justify-center relative text-[60px] sm:text-[120px] md:text-[230px] lg:text-[280px]  tracking-tight font-extrabold text-[#6B5E77] mb-[80px]'>
                 PRIZES
-                <div className='flex justify-center absolute text-[30px] sm:text-[60px] md:text-[100px] xl:text-[140px] bottom-0 font-extrabold text-[#FCF961]'>PRIZES
+                <div className='flex justify-center absolute text-[30px] sm:text-[60px] md:text-[100px] lg:text-[140px]  tracking-tight bottom-0 font-extrabold text-[#FCF961]'>PRIZES
                 </div>
             </div>
 

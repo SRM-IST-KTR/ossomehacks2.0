@@ -99,9 +99,9 @@ const Tracks = () => {
 
   return (
     <div className="bg-[#1e002e]">
-      <div className="flex justify-center relative text-[60px] sm:text-[120px] md:text-[160px] xl:text-[280px] font-extrabold text-[#6B5E77] md:pl-20 md:pr-20  ">
+      <div className="flex justify-center relative text-[60px] sm:text-[120px] md:text-[230px] lg:text-[280px]  font-extrabold text-[#6B5E77] md:pl-20 md:pr-20  ">
         DOMAINS
-        <div className="flex justify-center absolute text-[30px] sm:text-[60px] md:text-[90px] xl:text-[140px] bottom-0 font-extrabold text-[#FCF961]">
+        <div className="flex justify-center absolute text-[30px] sm:text-[60px] md:text-[100px] lg:text-[140px] bottom-0 font-extrabold text-[#FCF961]">
           DOMAINS
         </div>
       </div>

@@ -77,11 +77,11 @@ export default function Sponsors() {
     <>
       <div className="bg-[#1E002E]  w-full">
         <div>
-          <p className="text-[#6B5E77] text-center lg:text-[280px] md:text-[170px] text-[85px] -ml-2 font-raleway font-bold -tracking-widest">
+          <p className="text-[#6B5E77] text-center sm:text-[120px] lg:text-[280px] md:text-[230px] text-[60px] -ml-2 font-raleway font-bold -tracking-widest">
             PARTNERS
           </p>
           <div className="flex items-start justify-center">
-            <p className="text-[#FCF961] text-center lg:text-[140px] md:text-[82px] text-[42px] font-raleway font-bold -tracking-widest lg:ml-5 lg:-mt-[15%] -mt-[16%]">
+            <p className="text-[#FCF961] text-center sm:text-[60px] lg:text-[140px] md:text-[100px] text-[30px] bottom-0 font-raleway font-bold -tracking-widest lg:ml-5 lg:-mt-[15%] -mt-[16%]">
               PARTNERS
             </p>
           </div>
