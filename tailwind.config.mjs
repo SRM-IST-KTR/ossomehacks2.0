@@ -14,14 +14,29 @@ export default {
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
-        dmSans: ['DM Sans', 'sans-serif']
+        dmSans: ['DM Sans', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif']
       },
       colors: {
         bright_green: "#0DFF4E",
         event_gray: "#202020",
         bg_black: "#0B0F12"
       },
+      perspective: {
+        1000: "1000px",
+      },
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 };
+
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}

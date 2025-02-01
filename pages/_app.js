@@ -5,7 +5,7 @@ import Scroll from "@/components/Shared/Scroll";
 
 export default function App({ Component, pageProps }) {
   return (
-    <div>
+    <div className="bg-[#1E002E]">
       <Navbar />
       <Component {...pageProps} />
       <Footer />
