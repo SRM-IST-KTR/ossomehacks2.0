@@ -34,6 +34,8 @@ const Schedule = () => {
                 </div>
 
                 
+
+                {/*card row 1 */}
                 <div className="relative z-10 flex items-center justify-center lg:py-10 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
                    
                     <div
@@ -65,7 +67,7 @@ const Schedule = () => {
                 </div>
 
 
-
+                {/*card row 2 */}
                 <div className="relative z-10 flex items-center justify-center lg:py-10 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
                     
                     <div
