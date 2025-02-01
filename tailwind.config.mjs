@@ -25,10 +25,8 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         dmSans: ['DM Sans', 'sans-serif'],
-        raleway: ['Raleway', 'serif'],
         inter: ['Inter', 'serif'],
-        
-
+        raleway: ['Raleway', 'sans-serif']
       },
       colors: {
         bright_green: "#0DFF4E",
@@ -37,7 +35,21 @@ export default {
         primary_background: "#1E002E",
         bright_yellow: "#FCF961"
       },
+      perspective: {
+        1000: "1000px",
+      },
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 };
+
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
