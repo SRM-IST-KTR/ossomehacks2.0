@@ -30,8 +30,8 @@ export default function Home() {
       <Prizes />
       <Schedule />
       <Sponsors />
-      <Faq />
       <CodeOfConduct />
+      <Faq />
     </div>
   );
 }
