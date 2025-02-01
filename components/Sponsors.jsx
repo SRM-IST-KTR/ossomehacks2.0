@@ -4,6 +4,8 @@ import tlf from "@/public/tlf.png"
 import xyz from "@/public/xyz.png"
 import swoc from "@/public/swoc.png"
 
+
+
 export default function Sponsors() {
   // Function to generate cards
   const renderCards = () => {
