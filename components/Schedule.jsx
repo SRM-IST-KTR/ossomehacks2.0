@@ -26,7 +26,7 @@ const Schedule = () => {
 
                
 
-               
+
                 <div className="relative w-full flex justify-center">
                     <Image
                         src={spiral}
@@ -40,7 +40,7 @@ const Schedule = () => {
 
 
                 {/*card row 1 */}
-                <div className="relative z-10 flex items-center justify-center lg:py-10 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
+                <div className="relative z-10 flex items-center justify-center lg:py-11 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
                    
                     <div
                         className="bg-[#FECCFE] lg:w-[275px] lg:h-[70px] md:w-[245px] md:h-[70px] w-[130px] h-[50px] rounded-2xl lg:p-2 md:p-2 p-1 cursor-pointer"
@@ -74,7 +74,7 @@ const Schedule = () => {
 
 
                 {/*card row 2 */}
-                <div className="relative z-10 flex items-center justify-center lg:py-10 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
+                <div className="relative z-10 flex items-center justify-center lg:py-11 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
                     
                     <div
                         className={`bg-[#1E002E] lg:w-[275px] border-2 border-[#660066] lg:h-[70px] md:w-[245px] md:h-[70px] w-[120px] h-[50px] rounded-2xl p-2 transition-all duration-2000 ease-in-out ${showCard3 ? "opacity-100 scale-100" : "opacity-0 scale-90"
@@ -108,7 +108,7 @@ const Schedule = () => {
 
 
                {/*card row 3 */}
-                <div className="relative z-10 flex items-center justify-center lg:py-10 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
+                <div className="relative z-10 flex items-center justify-center lg:py-11 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
                     
                     <div
                         className="bg-[#FECCFE] lg:w-[275px] lg:h-[70px] md:w-[245px] md:h-[70px] w-[130px] h-[50px] rounded-2xl lg:p-2 md:p-2 p-1 cursor-pointer"
@@ -142,7 +142,7 @@ const Schedule = () => {
 
 
                {/*card row 4 */}
-                <div className="relative z-10 flex items-center justify-center lg:py-10 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
+                <div className="relative z-10 flex items-center justify-center lg:py-11 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
                   
                     <div
                         className={`bg-[#1E002E] lg:w-[275px] border-2 border-[#660066] lg:h-[70px] md:w-[245px] md:h-[70px] w-[120px] h-[50px] rounded-2xl p-2 transition-all duration-2000 ease-in-out ${showCard5 ? "opacity-100 scale-100" : "opacity-0 scale-90"
@@ -176,7 +176,7 @@ const Schedule = () => {
 
 
             {/*card row 5 */}
-                <div className="relative z-10 flex items-center justify-center lg:py-10 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
+                <div className="relative z-10 flex items-center justify-center lg:py-11 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
          
                     <div
                         className="bg-[#FECCFE] lg:w-[275px] lg:h-[70px] md:w-[245px] md:h-[70px] w-[130px] h-[50px] rounded-2xl lg:p-2 md:p-2 p-1 cursor-pointer"
@@ -210,7 +210,7 @@ const Schedule = () => {
 
 
                 {/*card row 6 */}
-                <div className="relative z-10 flex items-center justify-center lg:py-10 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
+                <div className="relative z-10 flex items-center justify-center lg:py-11 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
            
                     <div
                         className={`bg-[#1E002E] lg:w-[275px] border-2 border-[#660066] lg:h-[70px] md:w-[245px] md:h-[70px] w-[120px] h-[50px] rounded-2xl p-2 transition-all duration-2000 ease-in-out ${showCard7 ? "opacity-100 scale-100" : "opacity-0 scale-90"
