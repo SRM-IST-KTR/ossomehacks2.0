@@ -25,6 +25,8 @@ const Schedule = () => {
                 </div>
 
                
+
+               
                 <div className="relative w-full flex justify-center">
                     <Image
                         src={spiral}
@@ -34,6 +36,8 @@ const Schedule = () => {
                 </div>
 
                 
+
+
 
                 {/*card row 1 */}
                 <div className="relative z-10 flex items-center justify-center lg:py-10 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
@@ -65,6 +69,8 @@ const Schedule = () => {
 
                     </div>
                 </div>
+
+
 
 
                 {/*card row 2 */}
@@ -100,6 +106,7 @@ const Schedule = () => {
 
 
 
+
                {/*card row 3 */}
                 <div className="relative z-10 flex items-center justify-center lg:py-10 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
                     
@@ -130,6 +137,8 @@ const Schedule = () => {
 
                     </div>
                 </div>
+
+
 
 
                {/*card row 4 */}
@@ -165,7 +174,8 @@ const Schedule = () => {
 
 
 
-            
+
+            {/*card row 5 */}
                 <div className="relative z-10 flex items-center justify-center lg:py-10 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
          
                     <div
@@ -198,6 +208,8 @@ const Schedule = () => {
 
 
 
+
+                {/*card row 6 */}
                 <div className="relative z-10 flex items-center justify-center lg:py-10 md:py-9 py-5 lg:gap-80 md:gap-60 gap-[100px]">
            
                     <div
@@ -209,6 +221,7 @@ const Schedule = () => {
                         </div>
 
                     </div>
+
 
                     <div
                         className="bg-[#FECCFE] lg:w-[275px] lg:h-[70px] md:w-[245px] md:h-[70px] w-[130px] h-[50px] rounded-2xl lg:p-2 md:p-2 p-1 cursor-pointer"
@@ -226,6 +239,9 @@ const Schedule = () => {
                         </div>
                     </div>
                 </div>
+
+
+
             </div>
         </>
     );
