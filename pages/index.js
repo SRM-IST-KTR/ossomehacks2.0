@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Gallery from "@/components/Gallery";
 import Tracks from "@/components/Tracks";
+import Tracks1 from "@/components/Tracks1";
 import Prizes from "@/components/Prizes";
 import Schedule from "@/components/Schedule";
 import Sponsors from "@/components/Sponsors";
@@ -26,11 +27,12 @@ export default function Home() {
       <Hero />
       <About />
       <Gallery />
-      <Tracks />
+      {/* <Tracks /> */}
+      <Tracks1 />
       <Prizes />
       <Schedule />
       <Sponsors />
-      <CodeOfConduct />
+      {/* <CodeOfConduct /> */}
       <Faq />
     </div>
   );
