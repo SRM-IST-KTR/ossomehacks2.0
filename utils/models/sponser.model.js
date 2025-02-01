@@ -8,6 +8,14 @@ const sponsorSchema = new mongoose.Schema({
     logo: {
         type: String,
         required: true
+    },
+    alt:{
+        type: String,
+        required : false
+    },
+    tier:{
+        type:String,
+        required:false
     }
 });
 
