@@ -8,8 +8,9 @@ import Tracks1 from "@/components/Tracks1";
 import Prizes from "@/components/Prizes";
 import Schedule from "@/components/Schedule";
 import Sponsors from "@/components/Sponsors";
+import ContactForm from "@/components/ContactUs";
 import Faq from "@/components/Faq";
-import CodeOfConduct from "@/components/codeOfConduct";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +33,7 @@ export default function Home() {
       <Prizes />
       <Schedule />
       <Sponsors />
-      {/* <CodeOfConduct /> */}
+      <ContactForm />
       <Faq />
     </div>
   );

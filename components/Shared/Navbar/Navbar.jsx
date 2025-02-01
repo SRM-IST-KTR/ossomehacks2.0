@@ -14,27 +14,27 @@ export default function Navbar() {
         },
         {
             name: "About",
-            link: "/about",
+            link: "#about",
             icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
         {
             name: "Tracks",
-            link: "/tracks",
+            link: "#tracks",
             icon: <IconMapPin className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
         {
             name: "Prizes",
-            link: "/prizes",
+            link: "#prizes",
             icon: <IconAward className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
         {
             name: "Sponsors",
-            link: "/sponsors",
+            link: "#sponsors",
             icon: <IconStar className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
         {
             name: "Contact Us",
-            link: "/contact",
+            link: "#contact",
             icon: <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
     ];
