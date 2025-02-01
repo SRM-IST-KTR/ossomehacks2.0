@@ -105,43 +105,43 @@ const Tracks = () => {
           DOMAINS
         </div>
       </div>
-    <div 
-      className="relative  bg-[#1E002E] flex items-center justify-center overflow-hidden cursor-pointer carousel-container"
-      onClick={handleClick}
-    >
-      <div className="relative w-full max-w-[90vw] mt-[0px] lg:max-w-[1600px] lg:mt-[50px] md:mt-[50px]">
-        <div className="relative flex justify-center items-center w-full lg:h-[60vh] h-[40vh] max-h-[600px]">
-          {getVisibleItems().map(({ id, src, alt, href, position }) => {
-            const styles = getTransformStyles(position);
+      <div
+        className="relative  bg-[#1E002E] flex items-center justify-center overflow-hidden cursor-pointer carousel-container"
+        onClick={handleClick}
+      >
+        <div className="relative w-full max-w-[90vw] mt-[0px] lg:max-w-[1600px] lg:mt-[50px] md:mt-[50px]">
+          <div className="relative flex justify-center items-center w-full lg:h-[60vh] h-[40vh] max-h-[600px]">
+            {getVisibleItems().map(({ id, src, alt, href, position }) => {
+              const styles = getTransformStyles(position);
 
-            return (
-              <a
-                key={id}
-                href={href}
-                onClick={(e) => e.preventDefault()}
-                className="absolute transform-gpu"
-                style={{
-                  ...styles,
-                  transformStyle: 'preserve-3d',
-                }}
-              >
-                <div className={` 
+              return (
+                <a
+                  key={id}
+                  href={href}
+                  onClick={(e) => e.preventDefault()}
+                  className="absolute transform-gpu"
+                  style={{
+                    ...styles,
+                    transformStyle: 'preserve-3d',
+                  }}
+                >
+                  <div className={` 
                   relative w-[140px] h-[140px] sm:w-[180px] sm:h-[180px] md:w-[220px] md:h-[220px] lg:w-[260px] lg:h-[260px] transition-all duration-500 
                   ${position === 0 ? 'hover:shadow-[0_0_30px_#da8ee7]' : ''} 
                 `}>
-                  <img
-                    src={src} alt={alt}
-                    className="w-full h-full object-cover rounded-lg shadow-lg" draggable="false"
-                    style={{
-                      backfaceVisibility: 'hidden',
-                    }}
-                  />
-                </div>
-              </a>
-            );
-          })}
+                    <img
+                      src={src} alt={alt}
+                      className="w-full h-full object-cover rounded-lg shadow-lg" draggable="false"
+                      style={{
+                        backfaceVisibility: 'hidden',
+                      }}
+                    />
+                  </div>
+                </a>
+              );
+            })}
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );

@@ -11,124 +11,133 @@ export default function Hero() {
   });
 
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
-    script.async = true;
-    document.body.appendChild(script);
+    // Load particles.js script
+    const particlesScript = document.createElement('script');
+    particlesScript.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+    particlesScript.async = true;
+    document.body.appendChild(particlesScript);
 
-    script.onload = () => {
+    particlesScript.onload = () => {
       window.particlesJS('particles-js', {
         "particles": {
-    "number": {
-      "value": 160,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 1,
-      "random": true,
-      "anim": {
-        "enable": true,
-        "speed": 1,
-        "opacity_min": 0,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 4,
-        "size_min": 0.3,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": false,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 1,
-      "direction": "none",
-      "random": true,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 600
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "bubble"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "repulse"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 250,
-        "size": 0,
-        "duration": 2,
-        "opacity": 0,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 400,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
+          "number": {
+            "value": 160,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+            "image": {
+              "src": "img/github.svg",
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 1,
+            "random": true,
+            "anim": {
+              "enable": true,
+              "speed": 1,
+              "opacity_min": 0,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 4,
+              "size_min": 0.3,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": false,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 1,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 600
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "bubble"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 250,
+              "size": 0,
+              "duration": 2,
+              "opacity": 0,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 400,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
       });
     };
 
+    // Load Devfolio SDK script dynamically
+    const devfolioScript = document.createElement('script');
+    devfolioScript.src = 'https://apply.devfolio.co/v2/sdk.js';
+    devfolioScript.async = true;
+    devfolioScript.defer = true;
+    document.body.appendChild(devfolioScript);
+
+    // Timer setup
     const targetDate = new Date();
     targetDate.setDate(targetDate.getDate() + 25);
 
@@ -151,9 +160,11 @@ export default function Hero() {
     };
 
     const interval = setInterval(updateTimer, 1000);
+
     return () => {
       clearInterval(interval);
-      document.body.removeChild(script);
+      document.body.removeChild(particlesScript);
+      document.body.removeChild(devfolioScript);
     };
   }, []);
 
@@ -166,10 +177,11 @@ export default function Hero() {
       </Head>
 
       <div className="relative z-10">
+        {/* Animated Ribbon */}
         <div className="relative w-full overflow-hidden">
-          <div className="flex whitespace-nowrap animate-infinite-scroll font-sans text-[16px] font-extrabold text-[#FCF961]">
-            {Array(7).fill(
-              <div className="flex shrink-0">
+          <div className="flex whitespace-nowrap animate-marquee font-sans text-[16px] font-extrabold text-[#FCF961]">
+            {Array(10).fill(
+              <div className="flex shrink-0 px-4">
                 REGISTRATION IS NOW OPEN · REGISTRATION IS NOW OPEN · REGISTRATION IS NOW OPEN ·
               </div>
             )}
@@ -185,18 +197,29 @@ export default function Hero() {
         </div>
 
         <div className="flex justify-center pt-[70px] gap-[20px] flex-wrap sm:flex-nowrap px-4 md:px-0">
-          <button className="text-white font-semibold w-[250px] sm:w-[250px] h-[50px] rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition duration-200">
-            <Image src="/hero/b1.svg" layout="intrinsic" width={250} height={50} alt="Register" />
-          </button>
+          {/* Devfolio Apply Button */}
+          <div
+            className="apply-button"
+            data-hackathon-slug="ossomehacks"
+            data-button-theme="light"
+            style={{ height: '44px', width: '312px' }}
+          ></div>
 
-          <button className="border-4 border-[#FCF961] text-white font-semibold w-[250px] sm:w-[250px] h-[50px] rounded-[10px] hover:bg-[#FCF961] hover:text-black text-[16px] font-Uni Sans Heavy flex items-center justify-center">
-            <div style={{ marginRight: "8px", marginTop: "2.7px" }}>
-              <Image src="/hero/discord_icon.svg" width={18} height={15} alt="Discord Icon" />
+          {/* Discord Button */}
+          <a
+            href="https://discord.gg/t8k7Tq5Y37"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-4 border-[#FCF961] text-white font-semibold w-[250px] sm:w-[250px] h-[50px] rounded-[10px] hover:bg-[#FCF961] hover:text-black text-[16px] font-Uni Sans Heavy flex items-center justify-center"
+          >
+            <div style={{ marginRight: '8px' }}>
+              <Image src="/DiscordLogo/5542-discord-clyde-gif.gif" width={24} height={24} alt="Discord Logo" />
             </div>
             Discord Server
-          </button>
+          </a>
         </div>
 
+        {/* Countdown Timer */}
         <div className="flex justify-center pt-[68px] space-x-[20px] px-4 md:px-0">
           {[
             { value: timeLeft.days, label: 'Days' },
@@ -213,6 +236,22 @@ export default function Hero() {
           ))}
         </div>
       </div>
+
+      {/* CSS for marquee animation */}
+      <style jsx>{`
+        .animate-marquee {
+          animation: marquee 12s linear infinite;
+        }
+
+        @keyframes marquee {
+          0% {
+            transform: translateX(0%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      `}</style>
     </div>
   );
 }

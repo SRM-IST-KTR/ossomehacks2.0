@@ -1,143 +1,101 @@
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import prjred from "@/public/prjred.png";
-import tlf from "@/public/tlf.png"
-import xyz from "@/public/xyz.png"
-import swoc from "@/public/swoc.png"
+
+const SponsorCard = ({ logo, alt }) => (
+  <div className="bg-[#AA2490] w-[150px] h-[150px] md:w-[200px] md:h-[140px] lg:w-[250px] lg:h-[160px] rounded-xl md:rounded-2xl flex items-center justify-center">
+    <Image
+      src={logo}
+      alt={alt}
+      width={100}
+      height={100}
+      className="object-contain md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]"
+    />
+  </div>
+);
+const SectionTitle = ({ title }) => (
+  <p className="text-center lg:text-[24px] md:text-[20px] text-[18px] font-semibold pt-8 text-white">
+    {title.toUpperCase()} SPONSORS
+  </p>
+);
 
 export default function Sponsors() {
-  // Function to generate cards
-  const renderCards = () => {
-    const cardData = [tlf, tlf, tlf]; 
-    return cardData.map((image, index) => (
-      <div
-        key={index}
-        className="bg-[#AA2490] w-[100px] h-[70px] lg:w-[245px] lg:h-[140px] md:w-[185px] md:h-[120px] rounded-2xl flex items-center justify-center"
-      >
-        <Image
-          src={image} 
-          className="w-[80px] lg:w-[207px] md:w-[147px]  object-contain"
-          alt={`Card ${index + 1}`}
-        />
-      </div>
-    ));
-  };
+  const [sponsors, setSponsors] = useState({
+    platinum: [],
+    gold: [],
+    silver: [],
+    bronze: [],
+  });
 
+  useEffect(() => {
+    const fetchSponsors = async () => {
+      try {
+        const response = await fetch("/api/sponsors");
+        const data = await response.json();
+        if (data.success) {
+          const organizedSponsors = {
+            platinum: [],
+            gold: [],
+            silver: [],
+            bronze: [],
+          };
 
-  const renderCards2 = () => {
-    const cardData = [xyz, xyz, xyz, xyz, xyz]; 
-    return cardData.map((image, index) => (
-      <div
-        key={index}
-        className="bg-[#AA2490] w-[70px] h-[50px] lg:w-[245px] lg:h-[140px] md:w-[140px] md:h-[110px] rounded-xl md:rounded-2xl lg:rounded-2xl flex items-center justify-center"
-      >
-        <Image
-          src={image}
-          className="lg:w-[133px] md:w-[90px] w-[40px] object-contain"
-          alt={`Card ${index + 1}`}
-        />
-      </div>
-    ));
-  };
+          data.data.forEach((sponsor) => {
+            if (organizedSponsors[sponsor.tier]) {
+              organizedSponsors[sponsor.tier].push(sponsor);
+            }
+          });
 
-  const renderCards3 = () => {
-    const cardData = [swoc, swoc, swoc, swoc]; 
-    return cardData.map((image, index) => (
-      <div
-        key={index}
-        className="bg-[#AA2490] w-[60px] h-[40px] lg:w-[170px] lg:h-[95px] md:w-[130px] md:h-[90px]   rounded-xl md:rounded-2xl lg:rounded-2xl flex items-center justify-center"
-      >
-        <Image
-          src={image}
-          className="lg:w-[207px] md:w-[110px] w-[50px] mt-1 md:mt-2 lg:mt-2 object-contain"
-          alt={`Card ${index + 1}`}
-        />
-      </div>
-    ));
-  };
+          setSponsors(organizedSponsors);
+        }
+      } catch (error) {
+        console.error("Failed to fetch sponsors:", error);
+      }
+    };
 
+    fetchSponsors();
+  }, []);
 
-
-  const renderCards4 = () => {
-    const cardData = [swoc, swoc]; 
-    return cardData.map((image, index) => (
-      <div
-        key={index}
-        className="bg-[#AA2490] w-[60px] h-[40px] lg:w-[170px] lg:h-[95px] md:w-[130px]  md:h-[90px] rounded-xl md:rounded-2xl lg:rounded-2xl flex items-center justify-center"
-      >
-        <Image
-          src={image}
-          className="lg:w-[207px] md:w-[110px] w-[50px] mt-1  md:mt-2 lg:mt-2 object-contain"
-          alt={`Card ${index + 1}`}
-        />
-      </div>
-    ));
-  };
+  const renderSponsorCards = (tier) => (
+    sponsors[tier].map((sponsor) => (
+      <SponsorCard key={sponsor._id} logo={sponsor.logo} alt={sponsor.alt} />
+    ))
+  );
 
   return (
-    <>
-      <div className="bg-[#1E002E]  w-full">
-        <div>
-          <p className="text-[#6B5E77] text-center lg:text-[280px] md:text-[170px] text-[85px] -ml-2 font-raleway font-bold -tracking-widest">
-            PARTNERS
-          </p>
-          <div className="flex items-start justify-center">
-            <p className="text-[#FCF961] text-center lg:text-[140px] md:text-[82px] text-[42px] font-raleway font-bold -tracking-widest lg:ml-5 lg:-mt-[15%] -mt-[16%]">
-              PARTNERS
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <p className="text-center lg:text-[24px] font-semibold text-white">
-            PLATINUM SPONSORS
-          </p>
-
-         
-          <div className="flex items-center justify-center pt-7">
-            <div className="bg-[#AA2490] w-[140px] h-[90px] md:w-[246px] md:h-[146px] lg:w-[316px] lg:h-[176px] rounded-2xl flex items-center justify-center">
-              <Image
-                src={prjred}
-                className=" w-[110px] md:w-[200px] lg:w-[280px]  object-contain"
-              />
-            </div>
-          </div>
-
-          <p className="text-center lg:text-[24px] font-semibold pt-8 text-white">
-            GOLD SPONSORS
-          </p>
-          
-          <div className="flex items-center justify-center gap-2 md:gap-5  lg:gap-6 pt-4">
-            {renderCards()}
-          </div>
-
-          <p className="text-center lg:text-[24px] font-semibold pt-8 text-white">
-            SILVER SPONSORS
-          </p>
-
-          <div className="flex items-center justify-center gap-1 md:gap-2 lg:gap-6 pt-4">
-            {renderCards2()}
-          </div>
-
-
-          <p className="text-center lg:text-[24px] font-semibold pt-8 text-white">
-            BRONZE SPONSORS
-          </p>
-
-          <div className="flex items-center justify-center gap-2 md:gap-5 lg:gap-6 pt-4">
-            {renderCards3()}
-          </div>
-
-
-          <div className="flex items-center justify-center gap-2 md:gap-5 lg:gap-6 pt-5">
-            {renderCards3()}
-          </div>
-          
-
-          <div className="flex items-center justify-center gap-2 md:gap-5 lg:gap-6 pt-5">
-            {renderCards4()}
-          </div>
+    <div
+      id="sponsors"
+      className="bg-[#1E002E] w-full px-4 py-10">
+      <div className='flex justify-center relative text-[60px] sm:text-[120px] md:text-[180px] xl:text-[280px] tracking-tight font-extrabold text-[#6B5E77] mb-[80px]'>
+        PARTNERS
+        <div className='flex justify-center absolute text-[30px] sm:text-[60px] md:text-[100px] xl:text-[140px] bottom-0 font-extrabold text-[#FCF961]'>PARTNERS
         </div>
       </div>
-    </>
+
+      <div className="p-10">
+        {/* Platinum sponsors */}
+        <SectionTitle title="platinum" />
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8 pt-4">
+          {renderSponsorCards("platinum")}
+        </div>
+
+        {/* Gold sponsors */}
+        <SectionTitle title="gold" />
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8 pt-4">
+          {renderSponsorCards("gold")}
+        </div>
+
+        {/* Silver sponsors */}
+        <SectionTitle title="silver" />
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8 pt-4">
+          {renderSponsorCards("silver")}
+        </div>
+
+        {/* Bronze sponsors */}
+        <SectionTitle title="bronze" />
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8 pt-4">
+          {renderSponsorCards("bronze")}
+        </div>
+      </div>
+    </div>
   );
 }
