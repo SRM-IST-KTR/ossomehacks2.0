@@ -172,12 +172,20 @@ export default function Hero() {
 
           <button className="border-4 border-[#FCF961] text-white font-semibold w-[250px] h-[50px] rounded-[10px] hover:bg-[#FCF961] hover:text-black flex items-center justify-center transition duration-300">
             <div className="mr-2 mt-0.5">
-              <Image 
-                src="/hero/discord_icon.svg" 
-                width={18} 
-                height={15} 
-                alt="Discord Icon" 
-              />
+              <Image
+								src="/hero/discord_icon.svg"
+								width={18}
+								height={15}
+								alt="Discord Icon"
+								className="absolute group-hover:opacity-0"
+							/>
+							<Image
+								src="/hero/discord_black_icon.svg"
+								width={18}
+								height={15}
+								alt="Discord Icon Hover"
+								className="absolute opacity-0 group-hover:opacity-100 "
+							/>
             </div>
             Discord Server
           </button>
