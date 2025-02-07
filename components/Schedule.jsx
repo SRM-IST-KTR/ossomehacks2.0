@@ -12,8 +12,6 @@ import {
 import { motion } from "framer-motion";
 
 const Schedule = () => {
-   
-  
 
     return (
         <>
@@ -27,8 +25,6 @@ const Schedule = () => {
                         SCHEDULE
                     </p>
                 </div>
-
-
 
 
                 <div className="relative w-full flex justify-center">
@@ -76,9 +72,9 @@ const Schedule = () => {
 
                 <div className="flex pt-10 md:pt-16 lg:pt-16 items-center justify-center gap-[40%]  lg:gap-[30%]  ">
 
-                <div className="bg-transparent w-2 md:w-5 lg:w-20">
+                    <div className="bg-transparent w-2 md:w-5 lg:w-20">
 
-</div>
+                    </div>
                     <Modal>
                         <ModalTrigger className=" rounded-2xl text-nowrap flex justify-center items-center group/modal-btn relative">
 
@@ -102,10 +98,6 @@ const Schedule = () => {
                         </ModalTrigger>
 
                     </Modal>
-
-                   
-
-
                 </div>
 
 
@@ -146,9 +138,9 @@ const Schedule = () => {
 
                 <div className="flex pt-10 md:pt-16 lg:pt-16 items-center justify-center gap-[40%]  lg:gap-[30%]  ">
 
-                <div className="bg-transparent w-2 md:w-5 lg:w-20">
+                    <div className="bg-transparent w-2 md:w-5 lg:w-20">
 
-</div>
+                    </div>
                     <Modal>
                         <ModalTrigger className=" rounded-2xl text-nowrap flex justify-center items-center group/modal-btn relative">
 
@@ -173,7 +165,7 @@ const Schedule = () => {
 
                     </Modal>
 
-                   
+
 
 
                 </div>
@@ -217,9 +209,9 @@ const Schedule = () => {
                 <div className="flex pt-10 md:pt-16 lg:pt-16 items-center justify-center gap-[40%]  lg:gap-[30%]  ">
 
 
-                <div className="bg-transparent w-2 md:w-5 lg:w-20">
+                    <div className="bg-transparent w-2 md:w-5 lg:w-20">
 
-</div>
+                    </div>
                     <Modal>
                         <ModalTrigger className=" rounded-2xl text-nowrap flex justify-center items-center group/modal-btn relative">
 
@@ -243,15 +235,8 @@ const Schedule = () => {
                         </ModalTrigger>
 
                     </Modal>
-
                     
-
-
                 </div>
-
-
-
-                
 
             </div>
         </>
