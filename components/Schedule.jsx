@@ -13,9 +13,7 @@ import { motion } from "framer-motion";
 
 const Schedule = () => {
    
-    const [showCard5, setShowCard5] = useState(false);
-    const [showCard6, setShowCard6] = useState(false);
-    const [showCard7, setShowCard7] = useState(false);
+  
 
     return (
         <>
