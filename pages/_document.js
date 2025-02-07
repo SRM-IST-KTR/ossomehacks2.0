@@ -9,7 +9,7 @@ export default function Document() {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="OSSome Hacks 2.0 — A 36-hour hackathon on 10th-11th March 2025 at SRM Institute of Science and Technology. Join developers, innovators, and tech enthusiasts for an incredible coding competition organized by GCSRM." />
-        <meta name="keywords" content="hackathon, hackathon near me, tech events, hackathon Chennai, hackathon India 2025, coding competition, SRM University events, OSSome Hacks, developer meetups, tech innovation event, GCSRM hackathon" />
+        <meta name="keywords" content="hackathon, hackathon near me, tech events, hackathon Chennai, hackathon India 2025, coding competition, SRM University events, OSSome Hacks, developer meetups, tech innovation event, GCSRM hackathon, Github Community SRM, gcsrm, GCSRM" />
         <meta name="author" content="GitHub Community SRM (GCSRM)" />
         <meta name="theme-color" content="#000000" />
 
@@ -17,14 +17,15 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="OSSome Hacks 2.0 | 36-Hour Hackathon | SRM Institute of Science and Technology" />
         <meta property="og:description" content="OSSome Hacks 2.0 — a 36-hour hackathon on 10th-11th March 2025, where developers and innovators gather to create tech solutions. Hosted at SRM IST and organized by GCSRM." />
-        <meta property="og:image" content="/socialFrame.png" />
+        <meta property="og:image" content="https://res.cloudinary.com/doslhy0tq/image/upload/v1738955948/Frame_8_g8qr5z.png" />
         <meta property="og:url" content="https://ossomehacks.githubsrmist.tech/" />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="OSSome Hacks 2.0 | Hackathon Chennai 2025" />
         <meta name="twitter:description" content="Join OSSome Hacks 2.0 — 36 hours of tech innovation and collaboration at SRM IST. Don't miss this chance to build, innovate, and win!" />
-        <meta name="twitter:image" content="/socialFrame.png" />
+        <meta name="twitter:image" content="https://res.cloudinary.com/doslhy0tq/image/upload/v1738955948/Frame_8_g8qr5z.png" />
+        <meta name="twitter:image:alt" content="OSSome Hacks 2.0 event cover image" />
 
         {/* Crawlers and Indexing */}
         <meta name="robots" content="index, follow" />
