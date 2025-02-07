@@ -3,6 +3,7 @@
 import { cn } from '@/lib/utils';
 import { EvervaultCard } from './evervault-card';
 import { useState } from 'react';
+import { LinkPreview } from "@/components/ui/link-preview";
 
 export const HoverEffect = ({ items, className }) => {
 	let [hoveredIndex, setHoveredIndex] = useState(null);
@@ -27,9 +28,9 @@ export const HoverEffect = ({ items, className }) => {
 						/>
 
 						{/* Name Display */}
-						<p className="text-center text-white mt-4 font-semibold text-2xl">
+						<LinkPreview url="https://ossomehacks.devfolio.co/" className="text-center text-white mt-4 font-semibold text-2xl">
 							{item.alt}
-						</p>
+						</LinkPreview>
 					</div>
 				</div>
 			))}
