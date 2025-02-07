@@ -11,10 +11,10 @@ const About = () => {
                 <div className="absolute inset-0 flex flex-col justify-center items-center -mt-16 z-10 text-center px-4">
                     <div className=''>
 
-                        <p className='text-[#6B5E77] text-center lg:text-[280px] md:text-[230px] text-[120px] -ml-2 font-raleway font-bold -tracking-widest'>ABOUT</p>
+                        <p className='text-[#6B5E77] text-center lg:text-[280px] md:text-[230px] text-[60px] -ml-2 font-raleway font-extrabold -tracking-widest'>ABOUT</p>
                         <div className='flex items-start justify-center'>
 
-                            <p className='text-[#FCF961] text-center lg:text-[140px] md:text-[100px] text-[60px] font-raleway font-bold -tracking-widest lg:-mt-[25%] -mt-[26%] '>ABOUT</p>
+                            <p className='text-[#FCF961] text-center lg:text-[140px] md:text-[100px] text-[30px] font-raleway font-extrabold -tracking-widest lg:-mt-[25%] -mt-[26%] '>ABOUT</p>
                         </div>
                     </div>
 
