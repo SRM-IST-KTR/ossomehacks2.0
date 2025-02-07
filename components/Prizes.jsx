@@ -11,7 +11,9 @@ const Prizes = () => {
 	};
 
 	return (
-		<div className="bg-[#1E002E]">
+		<div
+			id="prizes"
+			className="bg-[#1E002E]">
 			<div className="flex justify-center relative text-[60px] sm:text-[120px] md:text-[180px] xl:text-[280px] tracking-tight font-extrabold text-[#6B5E77] mb-[80px]">
 				PRIZES
 				<div className="flex justify-center absolute text-[30px] sm:text-[60px] md:text-[100px] xl:text-[140px] bottom-0 font-extrabold text-[#FCF961]">
@@ -37,10 +39,10 @@ const Prizes = () => {
 					</div>
 					<div className="flex flex-col items-center text-[16px] font-medium text-[#5B5C5C]">
 						<div>Total Prize of Worth</div>
-						<div className="font-extrabold">10,000</div>
+						<div className="font-extrabold">$1600</div>
 						<div>
 							Cash Prize of{' '}
-							<span className="font-extrabold">INR 500</span>
+							<span className="font-extrabold">TBA</span>
 						</div>
 					</div>
 					<div
@@ -66,10 +68,10 @@ const Prizes = () => {
 					</div>
 					<div className="flex flex-col items-center text-[16px] font-medium text-[#5B5C5C]">
 						<div>Total Prize of Worth</div>
-						<div className="font-extrabold">10,000</div>
+						<div className="font-extrabold">$1600</div>
 						<div>
 							Cash Prize of{' '}
-							<span className="font-extrabold">INR 500</span>
+							<span className="font-extrabold">TBA</span>
 						</div>
 					</div>
 					<div
@@ -96,10 +98,10 @@ const Prizes = () => {
 					</div>
 					<div className="flex flex-col items-center text-[16px] font-medium text-[#5B5C5C]">
 						<div>Total Prize of Worth</div>
-						<div className="font-extrabold">10,000</div>
+						<div className="font-extrabold">$1600</div>
 						<div>
 							Cash Prize of{' '}
-							<span className="font-extrabold">INR 500</span>
+							<span className="font-extrabold">TBA</span>
 						</div>
 					</div>
 					<div
