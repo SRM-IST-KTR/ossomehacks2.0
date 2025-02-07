@@ -138,8 +138,7 @@ export default function Hero() {
     document.body.appendChild(devfolioScript);
 
     // Timer setup
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 25);
+    const targetDate = new Date("2025-03-10T08:00:00");
 
     const updateTimer = () => {
       const now = new Date();
