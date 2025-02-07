@@ -1,5 +1,6 @@
 import React from "react";
 import { HoverEffect } from "./ui/hoverEffect";
+import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 
 const Tracks1 = () => {
     const trackItems = [
@@ -17,9 +18,9 @@ const Tracks1 = () => {
             className="bg-[#1e002e] min-h-screen py-20">
             {/* Section Title */}
             <div className="flex justify-center relative text-[60px] sm:text-[120px] md:text-[160px] xl:text-[280px] font-extrabold text-[#6B5E77] md:pl-20 md:pr-20">
-                DOMAINS
+                TRACKS
                 <div className="absolute bottom-0 text-[30px] sm:text-[60px] md:text-[90px] xl:text-[140px] font-extrabold text-[#FCF961]">
-                    DOMAINS
+                    TRACKS
                 </div>
             </div>
 

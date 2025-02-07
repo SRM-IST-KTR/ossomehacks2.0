@@ -26,8 +26,7 @@ const About = () => {
                     {/* Main Paragraph */}
                     <p className="text-white font-poppins text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px] xl:text-[24px] leading-relaxed max-w-[400px] sm:max-w-[600px] md:max-w-[720px] lg:max-w-[920px]">
                         <span className="font-bold">Ossome Hacks 2.0</span> builds on the success of its inaugural edition in September 2023,
-                        which saw 250+ participants in 50+ teams solving real-world challenges. This <span className="font-bold">36-hour hackathon</span>
-                        engages tech enthusiasts of all levels with diverse tracks, fostering innovation, skill-building, and collaboration. More than a competition,
+                        which saw 250+ participants in 50+ teams solving real-world challenges. This <span className="font-bold">36-hour hackathon</span> engages tech enthusiasts of all levels with diverse tracks, fostering innovation, skill-building, and collaboration. More than a competition,
                         it celebrates open-source development and empowers participants to make a meaningful impact.
                     </p>
                 </div>
