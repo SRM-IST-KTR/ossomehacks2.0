@@ -81,7 +81,7 @@ export default function Sponsors() {
             PARTNERS
           </p>
           <div className="flex items-start justify-center">
-            <p className="text-[#FCF961] text-center sm:text-[60px] lg:text-[140px] md:text-[100px] text-[30px] bottom-0  font-extrabold -tracking-widest lg:ml-5 lg:-mt-[15%] -mt-[13%]">
+            <p className="text-[#FCF961] text-center sm:text-[60px] lg:text-[140px] md:text-[100px] text-[30px] bottom-0  font-extrabold -tracking-widest lg:ml-5 lg:-mt-[15%] -mt-[12%]">
               PARTNERS
             </p>
           </div>
