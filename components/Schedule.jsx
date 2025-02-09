@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
-import spiral2 from "@/public/spiral2.png";
+import spiral2 from "@/public/grp1.png";
 import clock from "@/public/clock.png";
 import {
     Modal,
