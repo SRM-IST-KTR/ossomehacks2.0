@@ -106,11 +106,11 @@ export default function Home() {
       </Head>
       <Hero />
       <About />
-      <Gallery />
       {/* <Tracks /> */}
       <Tracks1 />
       <Prizes />
       <Schedule />
+      <Gallery />
       <Sponsors />
       <ContactForm />
       <Faq />
