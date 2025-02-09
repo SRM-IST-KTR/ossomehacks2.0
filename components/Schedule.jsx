@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
-import spiral1 from "@/public/spiral1.png";
+import spiral2 from "@/public/spiral2.png";
 import clock from "@/public/clock.png";
 import {
     Modal,
@@ -29,7 +29,7 @@ const Schedule = () => {
 
                 <div className="relative w-full flex justify-center">
                     <Image
-                        src={spiral1}
+                        src={spiral2}
                         className="absolute top-0 left-1/2 transform md:mt-6 mt-2 -translate-x-1/2 lg:w-[160px] lg:h-[746px] md:w-[140px] md:h-[650px] w-[85px] h-[425px] "
                         priority
                     />
