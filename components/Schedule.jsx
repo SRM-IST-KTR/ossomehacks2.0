@@ -32,7 +32,7 @@ const Schedule = () => {
                 <div className="relative w-full flex justify-center">
                     <Image
                         src={spiral2}
-                        className="absolute top-0 left-1/2 transform md:mt-6 mt-2 -translate-x-1/2 lg:w-[160px] lg:h-[746px] md:w-[140px] md:h-[650px] w-[85px] h-[425px] "
+                        className="absolute top-0 left-1/2 transform md:mt-6 mt-2 -translate-x-1/2 lg:w-[190px] lg:h-[746px] md:w-[170px] md:h-[650px] w-[100px] h-[425px] "
                         priority
                     />
                 </div>

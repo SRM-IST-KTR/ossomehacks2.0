@@ -31,6 +31,7 @@ export default function Home() {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ossome Hacks 2.0 | Github Community SRM | 36-Hour Hackathon </title>
         <meta name="description" content="OSSome Hacks 2.0 — A 36-hour hackathon on 10th-11th March 2025 at SRM Institute of Science and Technology. Join developers, innovators, and tech enthusiasts for an incredible coding competition organized by GCSRM." />
         <meta name="keywords" content="hackathon, hackathon near me, tech events, hackathon Chennai, hackathon India 2025, coding competition, SRM University events, OSSome Hacks, developer meetups, tech innovation event, GCSRM hackathon, Github Community SRM, gcsrm, GCSRM" />
         <meta name="author" content="GitHub Community SRM (GCSRM)" />
@@ -38,8 +39,8 @@ export default function Home() {
 
         {/* Open Graph / Facebook Meta Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="OSSome Hacks 2.0 | 36-Hour Hackathon | SRM Institute of Science and Technology" />
-        <meta property="og:description" content="OSSome Hacks 2.0 — a 36-hour hackathon on 10th-11th March 2025, where developers and innovators gather to create tech solutions. Hosted at SRM IST and organized by GCSRM." />
+        <meta property="og:title" content="Ossome Hacks 2.0 | 36-Hour Hackathon | SRM Institute of Science and Technology" />
+        <meta property="og:description" content="OSSome Hacks 2.0 — a 36-hour hackathon on 10th-11th March 2025, where developers and innovators gather to create tech solutions. Hosted at SRM IST and organized by Github Community SRM (GCSRM)." />
         <meta property="og:image" content="https://res.cloudinary.com/doslhy0tq/image/upload/v1738955948/Frame_8_g8qr5z.png" />
         <meta property="og:url" content="https://ossomehacks.githubsrmist.tech/" />
 
@@ -106,11 +107,11 @@ export default function Home() {
       </Head>
       <Hero />
       <About />
-      <Gallery />
       {/* <Tracks /> */}
       <Tracks1 />
       <Prizes />
       <Schedule />
+      <Gallery />
       <Sponsors />
       <ContactForm />
       <Faq />
