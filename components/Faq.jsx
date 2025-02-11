@@ -1,5 +1,3 @@
-/** @format */
-
 import React, { useState } from 'react';
 import faqData from './faqData';
 
@@ -23,17 +21,15 @@ const Faq = () => {
 					key={index}
 					className="flex flex-col justify-center items-center mb-4 px-4 md:px-0">
 					<div
-						className={`flex flex-col w-full max-w-[500px] rounded-xl transition-all ease-in duration-100 ${
-							visibleAnswerIndex === index
-								? 'shadow-[5px_5px_4px_0px_#AA249080] border-2 border-[#AA2490]'
-								: ''
-						}`}>
+						className={`flex flex-col w-full max-w-[800px] rounded-xl transition-all ease-in duration-100 ${visibleAnswerIndex === index
+							? 'shadow-[5px_5px_4px_0px_#AA249080] border-2 border-[#AA2490]'
+							: ''
+							}`}>
 						<div
-							className={`questiondiv flex flex-row justify-between items-center bg-[#3A333E] text-white p-4 md:p-[20px] w-full cursor-pointer  ${
-								visibleAnswerIndex === index
-									? 'rounded-t-xl'
-									: 'rounded-xl'
-							}`}
+							className={`questiondiv flex flex-row justify-between items-center bg-[#3A333E] text-white p-4 md:p-[20px] w-full cursor-pointer  ${visibleAnswerIndex === index
+								? 'rounded-t-xl'
+								: 'rounded-xl'
+								}`}
 							onClick={() => handleToggleAnswer(index)}
 							aria-expanded={visibleAnswerIndex === index}>
 							<span className="text-sm md:text-base">
@@ -42,11 +38,10 @@ const Faq = () => {
 							<img
 								src="plus_icon.png"
 								alt="Toggle FAQ"
-								className={`h-[10px] md:h-[12px] transition-transform ease-in duration-300 ${
-									visibleAnswerIndex === index
-										? 'rotate-45'
-										: ''
-								}`}
+								className={`h-[10px] md:h-[12px] transition-transform ease-in duration-300 ${visibleAnswerIndex === index
+									? 'rotate-45'
+									: ''
+									}`}
 							/>
 						</div>
 						{visibleAnswerIndex === index && (
