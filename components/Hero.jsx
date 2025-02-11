@@ -198,7 +198,7 @@ export default function Hero() {
         <div className="flex justify-center pt-[70px] gap-[20px] flex-wrap sm:flex-nowrap px-4 md:px-0">
           {/* Devfolio Apply Button */}
           <div
-            className="apply-button"
+            className="apply-button relative"
             data-hackathon-slug="ossomehacks"
             data-button-theme="light"
             style={{ height: '44px', width: '312px' }}
@@ -209,17 +209,26 @@ export default function Hero() {
             href="https://discord.gg/t8k7Tq5Y37"
             target="_blank"
             rel="noopener noreferrer"
-            className="border-4 border-[#FCF961] text-white font-semibold w-[250px] sm:w-[250px] h-[50px] rounded-[10px] hover:bg-[#FCF961] hover:text-black text-[16px] font-Uni Sans Heavy flex items-center justify-center"
+            className="relative border-4 border-[#FCF961] text-white font-semibold w-[250px] sm:w-[250px] h-[50px] rounded-[10px] group transition-colors duration-300 hover:bg-[#FCF961] hover:text-black text-[16px] font-Uni Sans Heavy flex items-center justify-center"
           >
-            <div style={{ marginRight: '8px' }}>
-              <Image src="/DiscordLogo/5542-discord-clyde-gif.gif" width={24} height={24} alt="Discord Logo" />
+            <div className="relative z-10 flex items-center">
+              <div className="mr-2">
+                <Image src="/DiscordLogo/5542-discord-clyde-gif.gif" width={24} height={24} alt="Discord Logo" />
+              </div>
+              <span>Discord Server</span>
             </div>
-            Discord Server
           </a>
         </div>
 
+        {/* Hackathon Dates */}
+        <div className="flex justify-center pt-[40px] text-white text-xl md:text-2xl font-extrabold">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FCF961] to-[#FF00FF]">
+            10th - 11th March, 2025
+          </span>
+        </div>
+
         {/* Countdown Timer */}
-        <div className="flex justify-center pt-[68px] space-x-[20px] px-4 md:px-0">
+        <div className="flex justify-center pt-[28px] space-x-[20px] px-4 md:px-0">
           {[
             { value: timeLeft.days, label: 'Days' },
             { value: timeLeft.hours, label: 'Hours' },
