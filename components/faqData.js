@@ -9,7 +9,7 @@ const faqData = [
     },
     {
         question: "What is the team size limit?",
-        answer: "Teams can consist of 2 to 4 members. All team members must be from SRM KTR only."
+        answer: "Teams can consist of 2 to 4 members. Teams from all colleges and universities are allowed to participate."
     },
     {
         question: "How many tracks are there in the hackathon?",
