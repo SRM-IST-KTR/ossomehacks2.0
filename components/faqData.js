@@ -9,7 +9,7 @@ const faqData = [
     },
     {
         question: "What is the team size limit?",
-        answer: "Teams can consist of 2 to 4 members. Any college student from any university can participate."
+        answer: "Teams can consist of 2 to 4 members. Teams from all colleges and universities are allowed to participate."
     },
     {
         question: "How many tracks are there in the hackathon?",
