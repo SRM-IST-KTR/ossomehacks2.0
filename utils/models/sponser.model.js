@@ -9,13 +9,17 @@ const sponsorSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    alt:{
+    alt: {
         type: String,
-        required : false
+        required: false
     },
-    tier:{
-        type:String,
-        required:false
+    tier: {
+        type: String,
+        required: false
+    },
+    link: {
+        type: String,
+        required: false
     }
 });
 
