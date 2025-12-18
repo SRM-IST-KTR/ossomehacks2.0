@@ -45,7 +45,7 @@ export default function Sponsors() {
   useEffect(() => {
     const fetchSponsors = async () => {
       try {
-        const response = await fetch("/api/sponsors");
+        const response = await fetch("https://octacore.githubsrmist.in/api/sponsors");
         const data = await response.json();
         if (data.success) {
           const organizedSponsors = {
